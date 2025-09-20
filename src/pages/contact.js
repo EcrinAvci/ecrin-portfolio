@@ -330,7 +330,7 @@ export default function Contact() {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    LinkedIn'de Bağlan
+                    LinkedIn&apos;de Bağlan
                   </a>
                 </div>
 
@@ -346,7 +346,7 @@ export default function Contact() {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    GitHub'da Görüntüle
+                    GitHub&apos;da Görüntüle
                   </a>
                 </div>
               </div>
