@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
@@ -102,20 +103,14 @@ export default function Home() {
             </p>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="/projects" className={styles.card}>
             <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+              Projelerim <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              GitHub'daki projelerimi keşfedin. Otomatik olarak çekilen projeler.
             </p>
-          </a>
+          </Link>
         </div>
       </main>
     </>
