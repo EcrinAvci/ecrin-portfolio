@@ -369,6 +369,15 @@ export default function Projects() {
               }}>
                 Projeler
               </Link>
+              <Link href="/about" style={{
+                padding: '0.5rem 1rem',
+                color: '#4a5568',
+                textDecoration: 'none',
+                borderRadius: '20px',
+                transition: 'all 0.3s ease'
+              }}>
+                Hakkımda
+              </Link>
             </div>
           </div>
         </nav>

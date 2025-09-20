@@ -178,8 +178,8 @@ export default function Home() {
             <Link href="/about" style={styles.navLink}>
               Hakkımda
             </Link>
-            <a href="#contact" style={styles.navLink}>
-              İletişim
+            <a href="https://github.com/EcrinAvci" style={styles.navLink} target="_blank" rel="noopener noreferrer">
+              GitHub
             </a>
           </nav>
 
