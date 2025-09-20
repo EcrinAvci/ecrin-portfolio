@@ -5,8 +5,8 @@ import Link from 'next/link';
 const styles = {
   container: {
     minHeight: '100vh',
-    backgroundColor: '#f9fafb',
-    padding: '3rem 1rem',
+    background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+    padding: '2rem 1rem',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
   },
   maxWidth: {
@@ -15,19 +15,24 @@ const styles = {
   },
   header: {
     textAlign: 'center',
-    marginBottom: '3rem'
+    marginBottom: '3rem',
+    padding: '2rem 0'
   },
   title: {
-    fontSize: '2.5rem',
+    fontSize: '3rem',
     fontWeight: 'bold',
-    color: '#111827',
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
     marginBottom: '1rem'
   },
   subtitle: {
     fontSize: '1.25rem',
-    color: '#6b7280',
+    color: '#4a5568',
     maxWidth: '48rem',
-    margin: '0 auto'
+    margin: '0 auto',
+    fontWeight: '300'
   },
   filterContainer: {
     display: 'flex',
@@ -60,13 +65,16 @@ const styles = {
   },
   card: {
     backgroundColor: 'white',
-    borderRadius: '0.5rem',
-    boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+    borderRadius: '1rem',
+    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
     overflow: 'hidden',
-    transition: 'box-shadow 0.2s'
+    transition: 'all 0.3s ease',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    backdropFilter: 'blur(10px)'
   },
   cardHover: {
-    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
+    transform: 'translateY(-8px)',
+    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.15)'
   },
   cardContent: {
     padding: '1.5rem'
@@ -317,7 +325,56 @@ export default function Projects() {
       </Head>
 
       <main style={styles.container}>
-        <div style={styles.maxWidth}>
+        {/* Navigation */}
+        <nav style={{
+          position: 'fixed',
+          top: '0',
+          left: '0',
+          right: '0',
+          backgroundColor: 'rgba(255, 255, 255, 0.9)',
+          backdropFilter: 'blur(10px)',
+          padding: '1rem 0',
+          zIndex: 1000,
+          borderBottom: '1px solid rgba(255, 255, 255, 0.2)'
+        }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <Link href="/" style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              textDecoration: 'none'
+            }}>
+              Ecrin Avcı
+            </Link>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <Link href="/" style={{
+                padding: '0.5rem 1rem',
+                color: '#4a5568',
+                textDecoration: 'none',
+                borderRadius: '20px',
+                transition: 'all 0.3s ease'
+              }}>
+                Ana Sayfa
+              </Link>
+              <Link href="/projects" style={{
+                padding: '0.5rem 1rem',
+                backgroundColor: '#667eea',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '20px',
+                transition: 'all 0.3s ease'
+              }}>
+                Projeler
+              </Link>
+            </div>
+          </div>
+        </nav>
+
+        <div style={{ paddingTop: '80px' }}>
+          <div style={styles.maxWidth}>
           {/* Header */}
           <div style={styles.header}>
             <h1 style={styles.title}>Projelerim</h1>
