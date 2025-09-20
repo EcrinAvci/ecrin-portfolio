@@ -517,6 +517,7 @@ export default function Projects() {
               <p>Bu filtre için proje bulunamadı.</p>
             </div>
           )}
+          </div>
         </div>
       </main>
     </>
