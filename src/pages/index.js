@@ -108,7 +108,7 @@ export default function Home() {
               Projelerim <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              GitHub'daki projelerimi keşfedin. Otomatik olarak çekilen projeler.
+              GitHub&apos;daki projelerimi keşfedin. Otomatik olarak çekilen projeler.
             </p>
           </Link>
         </div>

@@ -322,7 +322,7 @@ export default function Projects() {
           <div style={styles.header}>
             <h1 style={styles.title}>Projelerim</h1>
             <p style={styles.subtitle}>
-              GitHub'daki projelerimi keşfedin. Toplam {projects.length} proje bulundu.
+              GitHub&apos;daki projelerimi keşfedin. Toplam {projects.length} proje bulundu.
             </p>
           </div>
 
@@ -426,7 +426,7 @@ export default function Projects() {
                       onMouseOver={(e) => e.target.style.backgroundColor = '#000000'}
                       onMouseOut={(e) => e.target.style.backgroundColor = '#111827'}
                     >
-                      GitHub'da Gör
+                      GitHub&apos;da Gör
                     </a>
                     {project.homepage && (
                       <a
