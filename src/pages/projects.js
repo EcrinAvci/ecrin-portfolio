@@ -378,6 +378,15 @@ export default function Projects() {
               }}>
                 Hakkımda
               </Link>
+              <Link href="/contact" style={{
+                padding: '0.5rem 1rem',
+                color: '#4a5568',
+                textDecoration: 'none',
+                borderRadius: '20px',
+                transition: 'all 0.3s ease'
+              }}>
+                İletişim
+              </Link>
             </div>
           </div>
         </nav>

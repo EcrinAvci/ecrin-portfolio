@@ -181,16 +181,16 @@ export default function Home() {
               }}>
                 Hakkımda
               </Link>
-              <a href="https://github.com/EcrinAvci" style={{
+              <Link href="/contact" style={{
                 padding: '0.5rem 1rem',
                 color: 'rgba(255, 255, 255, 0.8)',
                 textDecoration: 'none',
                 borderRadius: '20px',
                 transition: 'all 0.3s ease',
                 fontSize: '0.95rem'
-              }} target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
+              }}>
+                İletişim
+              </Link>
             </div>
           </div>
         </nav>

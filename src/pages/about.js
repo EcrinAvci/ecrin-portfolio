@@ -302,6 +302,9 @@ export default function About() {
               <Link href="/about" style={{...styles.navLink, ...styles.navLinkActive}}>
                 Hakkımda
               </Link>
+              <Link href="/contact" style={styles.navLink}>
+                İletişim
+              </Link>
             </div>
           </div>
         </nav>
