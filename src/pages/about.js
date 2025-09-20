@@ -261,26 +261,16 @@ const styles = {
 
 export default function About() {
   const skills = [
-    'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Express',
-    'MongoDB', 'PostgreSQL', 'Git', 'Docker', 'AWS', 'Tailwind CSS',
-    'Python', 'Django', 'Flask', 'Redis', 'GraphQL', 'REST API'
+    'C#', 'OOP', '.NET CORE', '.NET MVC',
+    'Machine Learning', 'MS SQL', 'ML.NET', 'Docker', 'AWS', 'Sagemaker',
+    'Python', 'Data Science', 'Flask', 'pandas', 'Wireshark', 'numPy','Matplotlib','Scikit-learn'
   ];
 
   const experiences = [
     {
-      title: 'Full Stack Developer',
-      period: '2023 - Devam Ediyor',
-      description: 'Modern web teknolojileri kullanarak kullanıcı dostu uygulamalar geliştiriyorum. React, Next.js ve Node.js ile projeler üretiyorum.'
-    },
-    {
-      title: 'Frontend Developer',
-      period: '2022 - 2023',
-      description: 'Responsive ve modern kullanıcı arayüzleri tasarladım. JavaScript, React ve CSS ile interaktif web uygulamaları geliştirdim.'
-    },
-    {
-      title: 'Web Developer',
-      period: '2021 - 2022',
-      description: 'HTML, CSS ve JavaScript ile web siteleri geliştirdim. Kullanıcı deneyimini ön planda tutarak projeler tamamladım.'
+      title: 'Software Engineer Intern',
+      period: '07.2025 - 09.2025',
+      description: 'Metal ve Yapı İnşaat A.Ş. Yazılım Geliştirme Departmanında zorunlu yaz stajımı gerçekleştirdim. '
     }
   ];
 
@@ -385,7 +375,7 @@ export default function About() {
                   GitHub
                 </a>
                 <a 
-                  href="https://linkedin.com/in/ecrinavci" 
+                  href="https://www.linkedin.com/in/ecrin-avcı-53095625a" 
                   style={styles.contactButton}
                   target="_blank" 
                   rel="noopener noreferrer"
