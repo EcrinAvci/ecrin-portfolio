@@ -63,30 +63,6 @@ const styles = {
     margin: '0 auto 3rem',
     opacity: 0.8
   },
-  nav: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '1rem',
-    flexWrap: 'wrap',
-    marginBottom: '3rem'
-  },
-  navLink: {
-    padding: '0.75rem 1.5rem',
-    backgroundColor: 'rgba(255,255,255,0.1)',
-    color: 'white',
-    textDecoration: 'none',
-    borderRadius: '25px',
-    border: '1px solid rgba(255,255,255,0.2)',
-    transition: 'all 0.3s ease',
-    backdropFilter: 'blur(10px)',
-    fontSize: '0.95rem',
-    fontWeight: '500'
-  },
-  navLinkHover: {
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    transform: 'translateY(-2px)',
-    boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
-  },
   projectsSection: {
     textAlign: 'center'
   },
@@ -159,8 +135,67 @@ export default function Home() {
       
       <main style={styles.container}>
         <div style={styles.backgroundPattern}></div>
+
+        {/* Navigation */}
+        <nav style={{
+          position: 'fixed',
+          top: '0',
+          left: '0',
+          right: '0',
+          backgroundColor: 'rgba(255, 255, 255, 0.1)',
+          backdropFilter: 'blur(10px)',
+          padding: '1rem 0',
+          zIndex: 1000,
+          borderBottom: '1px solid rgba(255, 255, 255, 0.2)'
+        }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <Link href="/" style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              background: 'linear-gradient(45deg, #fff, #f0f0f0)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              textDecoration: 'none'
+            }}>
+              Ecrin Avcı
+            </Link>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <Link href="/projects" style={{
+                padding: '0.5rem 1rem',
+                color: 'rgba(255, 255, 255, 0.8)',
+                textDecoration: 'none',
+                borderRadius: '20px',
+                transition: 'all 0.3s ease',
+                fontSize: '0.95rem'
+              }}>
+                Projelerim
+              </Link>
+              <Link href="/about" style={{
+                padding: '0.5rem 1rem',
+                color: 'rgba(255, 255, 255, 0.8)',
+                textDecoration: 'none',
+                borderRadius: '20px',
+                transition: 'all 0.3s ease',
+                fontSize: '0.95rem'
+              }}>
+                Hakkımda
+              </Link>
+              <a href="https://github.com/EcrinAvci" style={{
+                padding: '0.5rem 1rem',
+                color: 'rgba(255, 255, 255, 0.8)',
+                textDecoration: 'none',
+                borderRadius: '20px',
+                transition: 'all 0.3s ease',
+                fontSize: '0.95rem'
+              }} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </nav>
         
-        <div style={styles.content}>
+        <div style={{...styles.content, paddingTop: '100px'}}>
           <header style={styles.header}>
             <div style={styles.greeting}>Merhaba, ben</div>
             <h1 style={styles.name}>Ecrin Avcı</h1>
@@ -171,17 +206,7 @@ export default function Home() {
             </p>
           </header>
 
-          <nav style={styles.nav}>
-            <Link href="/projects" style={styles.navLink}>
-              Projelerim
-            </Link>
-            <Link href="/about" style={styles.navLink}>
-              Hakkımda
-            </Link>
-            <a href="https://github.com/EcrinAvci" style={styles.navLink} target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-          </nav>
+          {/* Navigation moved to top navbar */}
 
           <section style={styles.projectsSection}>
             <h3 style={styles.projectsTitle}>Projelerimi Keşfedin</h3>
@@ -209,10 +234,9 @@ export default function Home() {
       </main>
 
       <style jsx>{`
-        a:hover {
+        .nav-link:hover {
           background-color: rgba(255,255,255,0.2) !important;
-          transform: translateY(-2px) !important;
-          box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+          color: white !important;
         }
         a[href="/projects"]:hover {
           background-color: rgba(255,255,255,0.25) !important;
